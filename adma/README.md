@@ -37,7 +37,7 @@ Rationales are generated using **GPT-4o** as the teacher model and follow a unif
 - Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type]  
 - Step 3: Therefore, determine whether the sentence expresses an academic opinion  
 
-To further improve reasoning fidelity, we introduce a **contrastive rationale distillation strategy**:
+To further improve reasoning fidelity, we introduce a **contrastive learning strategy**:
 
 - Counterfactual rationales with inverted logic are constructed  
 - The model is trained to distinguish valid and flawed reasoning  
