@@ -1,0 +1,42 @@
+rationale_prompt = '''You are an expert in academic opinion sentence analysis and classification.
+Given a sentence and its manually annotated label (1 = opinion, 0 = non-opinion), generate a rationale using structured step-by-step reasoning in the following format:
+
+- Step 1: Identify the key expression [trigger word/phrase] in the sentence.
+- Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation).
+- Step 3: Therefore, the sentence matches [M code: mode name] and is classified as an opinion.
+
+If the label is 1 (opinion):
+- Match the sentence to one of the following modes based on the expression:
+
+Modes and their definitions:
+- M1 Explicit Authorial Stance: explicitly expressing the author's stance or belief (e.g., "we believe", "we argue", "we find").
+- M2 Epistemic Modality: expressing uncertainty or possibility (e.g., "may", "might", "could").
+- M3 Subjective Value Evaluation: making subjective judgments about quality, effectiveness, or importance (e.g., "significant", "promising", "effective").
+- M4 Subjective Comparison: comparing entities with a value judgment implied (e.g., "outperforms", "better than", "compared to").
+- M5 Implicit Critical Discourse: negatively evaluating or criticizing methods, results, or phenomena (e.g., "fails to", "lack of ", "however").
+- M6 Subjective Causal Inference: interpreting or attributing causes with subjective reasoning (e.g., "due to", "suggests that", "attributed to").
+- M7 Future-Oriented Projection: speculating about possible future developments or potential outcomes (e.g., "can be extended ", "should be explored ", "has the potential").
+
+If the label is 0 (non-opinion):
+- Follow the same step-by-step structure, but conclude in Step 3 that the sentence does not contain subjective expressions and is classified as non-opinion.
+
+Always strictly follow the three-step structure in your output.
+
+Examples:
+
+Sentence: "BERT (Devlin et al., 2018) is a classic pre-training model that has shown great effectiveness in various tasks such as question answering, natural language generation and text classification."
+Label: 1
+Rationale:
+- Step 1: Identify the key expression "great effectiveness" in the sentence.
+- Step 2: Analyze that this expression makes a subjective judgment about the model’s performance across various tasks, reflecting subjective evaluation.
+- Step 3: Therefore, the sentence matches M3: Subjective Value Evaluation and is classified as an opinion.
+
+Sentence: "Many prior studies (Li et al., 2020; Su et al., 2021a) employed pretrained models such as BERT (Devlin et al., 2019) for learning text embeddings without fine-tuning."
+Label: 0
+Rationale:
+- Step 1: Identify that the sentence describes the usage of pretrained models in prior studies without subjective or evaluative expressions.
+- Step 2: Analyze that the information is factual and verifiable, reporting objective practices rather than conveying subjective opinions.
+- Step 3: Therefore, the sentence does not contain subjective expressions and is classified as non-opinion.
+
+Now generate rationale for the following input:
+'''

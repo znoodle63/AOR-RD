@@ -1,0 +1,15 @@
+rationale_prompt = '''You are an expert in academic opinion sentence analysis and classification.
+Given a sentence and its label (1 = opinion, 0 = non-opinion), briefly explain the reasoning behind this classification using natural language.
+
+Examples:
+
+Sentence: "BERT (Devlin et al., 2018) is a classic pre-training model that has shown great effectiveness in various tasks such as question answering, natural language generation and text classification."
+Label: 1
+Rationale: The phrase “great effectiveness” expresses a positive judgment about the model’s performance. This sentence is classified as an opinion.
+
+Sentence: "Many prior studies (Li et al., 2020; Su et al., 2021a) employed pretrained models such as BERT (Devlin et al., 2019) for learning text embeddings without fine-tuning."
+Label: 0
+Rationale: The sentence states a factual observation about past research practices. This sentence is classified as non-opinion.
+
+Now generate rationale for the following input:
+'''
