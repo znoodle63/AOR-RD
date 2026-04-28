@@ -35,9 +35,10 @@ If you find this part of the repository useful, please consider citing:
 
 ### GitHub Repository
 
-Zhang M.
-AOR-RD: Academic Opinion Recognition with Rationale Distillation[EB/OL].
+```bibtex
+Zhang M. AOR-RD: Academic Opinion Recognition with Rationale Distillation[EB/OL].
 https://github.com/znoodle63/AOR-RD.
+```
 
 ### Journal Paper (Accepted, Forthcoming)
 
