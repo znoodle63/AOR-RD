@@ -42,13 +42,11 @@ The dataset contains **10,000 sentences** sampled from **ACL 2024 papers**.
 
 Each instance is stored in **JSONL** format:
 
-```json
 {
   "text": "...",
   "label": 1,
   "rationale": "- Step 1: ...\n- Step 2: ...\n- Step 3: ..."
 }
-```
 
 - `text`: input sentence  
 - `label`: binary label (`1 = opinion`, `0 = non-opinion`)  
@@ -62,9 +60,9 @@ Rationales are generated using **GPT-4o** as the teacher model.
 
 Each rationale follows a structured **three-step reasoning template**:
 
-- Step 1: Identify the key expression [trigger word/phrase] in the sentence.
-- Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation).
-- Step 3: Therefore, the sentence matches [M code: mode name] and is classified as an opinion.
+- Step 1: Identify the key expression [trigger word/phrase] in the sentence  
+- Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation)  
+- Step 3: Therefore, the sentence matches [M code: mode name] and is classified as an opinion  
 
 ---
 
@@ -72,18 +70,21 @@ Each rationale follows a structured **three-step reasoning template**:
 
 This directory includes:
 
-- `train_rationale_output.jsonl` – training set  
-- `val_rationale_output.jsonl` – validation set  
-- `test_rationale_output.jsonl` – test set  
-- `prompts/` – prompt templates
+- train_rationale_output.jsonl – training set  
+- val_rationale_output.jsonl – validation set  
+- test_rationale_output.jsonl – test set  
+- prompts/ – prompt templates  
 
 ---
 
 ## 📌 Citation
 
-If you find this dataset useful in your research, **please consider citing our paper**:
+If you find this dataset useful in your research, please consider citing our paper:
 
-```bibtex
+Zhang M, Zhang Z, Wang Y, et al.  
+*Explain Before Classify: Contrastive Rationale Distillation for Academic Opinion Recognition*  
+International Conference on Advanced Data Mining and Applications (ADMA), 2025.
+
 @inproceedings{zhang2025explain,
   title={Explain Before Classify: Contrastive Rationale Distillation for Academic Opinion Recognition},
   author={Zhang, M. and Zhang, Z. and Wang, Y. and others},
@@ -92,4 +93,3 @@ If you find this dataset useful in your research, **please consider citing our p
   year={2025},
   organization={Springer Nature Singapore}
 }
-```
