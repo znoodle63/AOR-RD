@@ -16,18 +16,18 @@ This dataset is constructed for the task of **academic opinion recognition** in 
 - 🎯 Task: Identify whether a sentence expresses an academic opinion  
 - 🧠 Supervision: Each sentence is paired with a structured **rationale**
 
+Rationales are generated using **GPT-4o** as the teacher model.
 
+Each rationale follows a structured **three-step reasoning template**:
 
-## ⚠️ Dataset Correction Note
+- Step 1: Identify the key expression [trigger word/phrase] in the sentence.
+- Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation).
+- Step 3: Therefore, the sentence matches [M code: mode name] and is classified as an opinion.
+  
 
-Due to an oversight in the early reported statistics, the label distribution described in the paper was not fully consistent with the finalized dataset.
+## ⚠️ Dataset Statistics
 
-The data released in this repository have been carefully re-checked and should be regarded as the **corrected and finalized version** of the dataset.
-
-
-## 📊 Dataset Statistics
-
-The dataset contains **10,000 sentences** sampled from **ACL 2024 papers**.
+Due to an oversight, the statistics reported in the paper do not accurately reflect the final dataset, and **the statistics in the table below should be regarded as the authoritative reference**. The dataset contains **10,000 sentences** sampled from **ACL 2024 papers**.
 
 | Label              | Train | Valid | Test | Total |
 |-------------------|------:|------:|-----:|------:|
@@ -35,7 +35,6 @@ The dataset contains **10,000 sentences** sampled from **ACL 2024 papers**.
 | Non-opinion (0)   | 4,221 | 510   | 518  | 5,249 |
 | **Total**         | 8,000 | 1,000 | 1,000 | 10,000 |
 
---
 
 ## 🧾 Data Format
 
@@ -52,18 +51,6 @@ Each instance is stored in **JSONL** format:
 - `text`: input sentence  
 - `label`: binary label (`1 = opinion`, `0 = non-opinion`)  
 - `rationale`: structured explanation  
-
-
-
-## 🧠 Rationale Generation
-
-Rationales are generated using **GPT-4o** as the teacher model.
-
-Each rationale follows a structured **three-step reasoning template**:
-
-- Step 1: Identify the key expression [trigger word/phrase] in the sentence.
-- Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation).
-- Step 3: Therefore, the sentence matches [M code: mode name] and is classified as an opinion.
 
 
 ## 📌 Citation
