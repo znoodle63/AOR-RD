@@ -16,9 +16,7 @@ This dataset is constructed for the task of **academic opinion recognition** in 
 - 🎯 Task: Identify whether a sentence expresses an academic opinion  
 - 🧠 Supervision: Each sentence is paired with a structured **rationale**
 
-Rationales are generated using **GPT-4o** as the teacher model.
-
-Each rationale follows a structured **three-step reasoning template**:
+Rationales are generated using **GPT-4o** as the teacher model. Each rationale follows a structured **three-step reasoning template**:
 
 - Step 1: Identify the key expression [trigger word/phrase] in the sentence.
 - Step 2: Analyze that this expression [action verb] [object] and reflects [subjectivity type] (with brief explanation).
