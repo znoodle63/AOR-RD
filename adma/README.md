@@ -64,7 +64,7 @@ If you find this dataset useful in your research, **please consider citing our p
 ```bibtex
 @inproceedings{zhang2025explain,
   title={Explain Before Classify: Contrastive Rationale Distillation for Academic Opinion Recognition},
-  author={Zhang, M. and Zhang, Z. and Wang, Y. and others},
+  author={Mengting Zhang and Zhixiong Zhang and Yajiao Wang and Yang Li and Meng Wang},
   booktitle={International Conference on Advanced Data Mining and Applications},
   pages={311--325},
   year={2025},
