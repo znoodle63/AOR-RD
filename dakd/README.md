@@ -36,16 +36,16 @@ If you find this part of the repository useful, please consider citing:
 ### GitHub Repository
 
 ```bibtex
-Zhang M. AOR-RD: Academic Opinion Recognition with Rationale Distillation[EB/OL].
+Mengting Zhang. AOR-RD: Academic Opinion Recognition with Rationale Distillation[EB/OL].
 https://github.com/znoodle63/AOR-RD.
 ```
 
 ### Journal Paper (Accepted, Forthcoming)
 
 ```bibtex
-@article{zhang2025rationale,
+@article{zhang2026rationale,
   title={Rationale Distillation for Interpretable Academic Opinion Recognition in Scientific Literature},
-  author={Zhang, M. and Zhang, Z. and Li, Y. and others},
+  author={Mengting Zhang and Zhixiong Zhang and Yang Li and Meng Wang},
   journal={Data Analysis and Knowledge Discovery},
   year={2026},
   note={in press}
@@ -57,7 +57,7 @@ https://github.com/znoodle63/AOR-RD.
 ```bibtex
 @inproceedings{zhang2025explain,
   title={Explain Before Classify: Contrastive Rationale Distillation for Academic Opinion Recognition},
-  author={Zhang, M. and Zhang, Z. and Wang, Y. and others},
+  author={Mengting Zhang and Zhixiong Zhang and Yajiao Wang and Yang Li and Xin Lin and Meng Wang},
   booktitle={International Conference on Advanced Data Mining and Applications},
   pages={311--325},
   year={2025},
